@@ -64,7 +64,8 @@
       Netlify Form Detection 
       This hidden form allows Netlify to recognize the fields during the build process
     -->
-    <form name="feedback" netlify netlify-honeypot="bot-field" hidden>
+    <form name="feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="feedback" />
       <input type="email" name="email" />
       <textarea name="feedback"></textarea>
     </form>
