@@ -11,8 +11,8 @@ import {
 } from 'lucide-react';
 import { Feature, Testimonial, FaqItem, SocialLink } from './types';
 
-export const APP_URL = "https://studyflowbrain.netlify.app";
-export const LOGO_SRC = "./logo.png"; // Asegúrate de que tu archivo se llame logo.png y esté en la misma carpeta
+export const APP_URL = "https://studyflowbrain-landing.netlify.app";
+export const LOGO_SRC = "/logo.png"; // Updated to absolute path for public folder assets
 
 // CONFIGURACIÓN: Cambia esto a 'true' cuando quieras mostrar los iconos de redes sociales
 export const SHOW_SOCIALS = false;
