@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://studyflowai.com/sitemap.xml
+Sitemap: https://studyflowbrain.netlify.app/sitemap.xml
