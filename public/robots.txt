@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://studyflowai.com/sitemap.xml

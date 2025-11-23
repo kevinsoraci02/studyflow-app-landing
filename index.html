@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyFlow AI - Enfócate, Aprende y Sube de Nivel</title>
+    <meta name="description" content="StudyFlow AI es la aplicación de productividad definitiva para estudiantes. Domina tu concentración con un temporizador Pomodoro, gana XP, sube en la clasificación de estudiantes y aprende con un tutor de IA integrado." />
+    <meta name="keywords" content="app de productividad, temporizador Pomodoro, ranking de estudiantes, tutor IA, estudio gamificado, herramientas de estudio" />
+    <meta property="og:title" content="StudyFlow AI - Enfócate, Aprende y Sube de Nivel" />
+    <meta property="og:description" content="Gamifica tus sesiones de estudio con StudyFlow AI. Rastrea tareas, gana coleccionables y obtén ayuda de una IA avanzada." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://studyflowbrain.netlify.app" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (Using CDN for simplicity as requested, though a build step is recommended for production) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              background: '#020617', // Slate 950
+              surface: '#0f172a',    // Slate 900
+              primary: '#8b5cf6',    // Violet 500
+              secondary: '#10b981',  // Emerald 500
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background text-white antialiased overflow-x-hidden">
+    <!-- 
+      Netlify Form Detection 
+      This hidden form allows Netlify to recognize the fields during the build process
+    -->
+    <form name="feedback" netlify netlify-honeypot="bot-field" hidden>
+      <input type="email" name="email" />
+      <textarea name="feedback"></textarea>
+    </form>
+
+    <div id="root"></div>
+    <!-- Vite Entry Point -->
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
